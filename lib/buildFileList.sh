@@ -71,6 +71,7 @@ function BuildFileList() {
     -path "*/.git" -prune -o \
     -path "*/.venv" -prune -o \
     -path "*/.rbenv" -prune -o \
+    -path "*/.terragrunt-cache" -prune -o \
     -type f 2>&1)
   fi
 
@@ -493,6 +494,16 @@ function BuildFileList() {
         # Append the file to the array #
         ################################
         FILE_ARRAY_CLOUDFORMATION+=("${FILE}")
+      fi
+
+      ########################################
+      # Check if the file is Tekton template #
+      ########################################
+      if DetectTektonFile "${FILE}"; then
+        ################################
+        # Append the file to the array #
+        ################################
+        FILE_ARRAY_TEKTON+=("${FILE}")
       fi
 
       ############################################
