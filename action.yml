@@ -1,9 +1,9 @@
-name: 'Super-Linter'
-author: 'GitHub'
+name: 'Super-Linter-Standardx'
+author: 'Rieset'
 description: 'It is a simple combination of various linters, written in bash, to help validate your source code.'
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/github/super-linter:v3'
+  image: 'docker://rieset/super-linter-standardx:v1'
 branding:
   icon: 'check-square' 
   color: 'white'

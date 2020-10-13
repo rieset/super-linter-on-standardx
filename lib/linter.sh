@@ -1156,7 +1156,7 @@ LINTER_COMMANDS_ARRAY['TERRAFORM_TERRASCAN']="terrascan scan -p /root/.terrascan
 LINTER_COMMANDS_ARRAY['TERRAGRUNT']="terragrunt hclfmt --terragrunt-check --terragrunt-hclfmt-file "
 LINTER_COMMANDS_ARRAY['TSX']="eslint --no-eslintrc -c ${TYPESCRIPT_LINTER_RULES}"
 LINTER_COMMANDS_ARRAY['TYPESCRIPT_ES']="eslint --no-eslintrc -c ${TYPESCRIPT_LINTER_RULES}"
-LINTER_COMMANDS_ARRAY['TYPESCRIPT_STANDARD']="standard --parser @typescript-eslint/parser --plugin @typescript-eslint/eslint-plugin ${TYPESCRIPT_STANDARD_LINTER_RULES}"
+LINTER_COMMANDS_ARRAY['TYPESCRIPT_STANDARD']="standardx --parser @typescript-eslint/parser --plugin @typescript-eslint/eslint-plugin ${TYPESCRIPT_STANDARD_LINTER_RULES}"
 LINTER_COMMANDS_ARRAY['XML']="xmllint"
 LINTER_COMMANDS_ARRAY['YAML']="yamllint -c ${YAML_LINTER_RULES}"
 
